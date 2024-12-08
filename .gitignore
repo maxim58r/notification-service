@@ -31,3 +31,22 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# IntelliJ IDEA папка .idea
+.idea/
+# Исключить только индивидуальные файлы настроек
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/libraries
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+
+# Исключить target папку Maven
+/target/
+
+# Исключить лог-файлы
+*.log
