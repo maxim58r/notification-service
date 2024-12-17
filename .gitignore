@@ -35,15 +35,21 @@ build/
 # IntelliJ IDEA папка .idea
 .idea/
 # Исключить только индивидуальные файлы настроек
-!.idea/codeStyles
-!.idea/inspectionProfiles
-!.idea/modules.xml
-!.idea/vcs.xml
-!.idea/libraries
+#!.idea/codeStyles
+#!.idea/inspectionProfiles
+#!.idea/modules.xml
+#!.idea/vcs.xml
+#!.idea/libraries
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/shelf/
 .idea/usage.statistics.xml
+.idea/modules.xml
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dictionaries/
+.idea/libraries/
 
 # Исключить target папку Maven
 /target/
