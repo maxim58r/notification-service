@@ -16,6 +16,12 @@
 
 	<!-- Зависимости -->
 	<dependencies>
+		<!-- Spring Boot Starter Actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 		<!-- Spring Boot Starter Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,10 +36,10 @@
 		</dependency>
 
 		<!-- Shared Library -->
-		<dependency>
-			<groupId>com.chatter</groupId>
-			<artifactId>shared-library</artifactId>
-			<version>1.0.2</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.chatter</groupId>-->
+<!--			<artifactId>shared-library</artifactId>-->
+<!--			<version>1.0.2</version>-->
+<!--		</dependency>-->
 	</dependencies>
 </project>
