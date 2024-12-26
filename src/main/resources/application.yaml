@@ -1,0 +1,30 @@
+server:
+  port: 8093
+
+spring:
+  application:
+    name: notification-service
+
+management:
+  endpoints:
+    web:
+      # Разрешаем открытый доступ (exposure) ко всем или конкретным эндпоинтам,
+      # например health и info
+      exposure:
+        include:
+          - health
+          - info
+      base-path: /actuator
+
+  # Настройки непосредственно для health-эндпоинта
+  endpoint:
+    health:
+      probes:
+        enabled: true     # Включаем liveness/readiness-пробы
+      show-details: ALWAYS  # Всегда показывать детальные сведения о состоянии (иначе может быть "UNKNOWN")
+
+  # Если у вас включена Security, но хотите, чтобы /actuator/health работал БЕЗ авторизации,
+  # можно либо в коде (Java) настроить antMatchers("/actuator/health").permitAll(),
+  # либо временно отключить общий security для Management:
+  security:
+    enabled: false
