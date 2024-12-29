@@ -12,7 +12,7 @@
 	</parent>
 
 	<!-- Артефакт микросервиса -->
-	<artifactId>notification-service</artifactId>
+	<artifactId>notificationservice</artifactId>
 
 	<!-- Зависимости -->
 	<dependencies>
